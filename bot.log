@@ -26,3 +26,408 @@ Traceback (most recent call last):
     print(text)
 NameError: name 'text' is not defined
 telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/dispatcher.py", line 372, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/handler.py", line 120, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 29, in greet_user
+    print(text)
+NameError: name 'text' is not defined
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/sendMessage
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e4b750>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e89350>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e4b210>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25a10>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e258d0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106dbf990>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 326, in connect
+    ssl_context=context)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py", line 324, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1059: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 364, in _make_request
+    exc_cls=ConnectTimeoutError)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ConnectTimeoutError: (<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 218, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 293, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 1982, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 327, in post
+    **urlopen_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 224, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f63890>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73290>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73590>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6fc50>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f7b6d0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x106dbf450>, 'Connect timed out. (connect timeout=5.0)')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d250>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d290>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d750>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/usr/local/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d750>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 218, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d750>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 293, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 1982, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 327, in post
+    **urlopen_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 224, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d750>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d490>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f6d110>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25850>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25610>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/usr/local/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25610>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 218, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25610>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 293, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 1982, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 327, in post
+    **urlopen_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 224, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106e25610>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73e90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73d50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73190>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/usr/local/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 218, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 293, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 1982, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 327, in post
+    **urlopen_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 224, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73c10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73b10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.vendor.ptb_urllib3.urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f73b50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates
+telegram.ext.updater - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f732d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/usr/local/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f732d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 218, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f732d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 332, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/updater.py", line 293, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 66, in decorator
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/bot.py", line 1982, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 327, in post
+    **urlopen_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/telegram/utils/request.py", line 224, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot930126622:AAFwRyYNrTOlu0UMDFSzK9wGf34qAuRHRBQ/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x106f732d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/dispatcher.py", line 372, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.7/site-packages/telegram/ext/handler.py", line 120, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 29, in greet_user
+    print(text)
+NameError: name 'text' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/odaoda/projects/mybot/env/lib/python3.7/site-packages/telegram/ext/dispatcher.py", line 372, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/odaoda/projects/mybot/env/lib/python3.7/site-packages/telegram/ext/handler.py", line 120, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 29, in greet_user
+    print(text)
+NameError: name 'text' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
