@@ -13,7 +13,6 @@
 
 """
 import ephem
-
 import logging
 import settings
 
@@ -33,27 +32,42 @@ def main():
     mybot = Updater(settings.API_KEY, request_kwargs=settings.PROXY)
     
     dp = mybot.dispatcher
-    dp.add_handler(CommandHandler("planet", greet_user))
-    dp.add_handler(MessageHandler(Filters.text, talk_to_me))
+    dp.add_handler(CommandHandler("start", greet_user))
+    dp.add_handler(CommandHandler('planet', talk_to_me))
+    dp.add_handler(CommandHandler('not_solar', not_solar))
+    dp.add_handler(MessageHandler(Filters.text, planet_user))
+
     
     mybot.start_polling()
     mybot.idle()
 
 def greet_user(bot, update):
-    text = 'Введите /planet'
+    text = 'Вызван /start, введите /planet'
     #print(text)
     update.message.reply_text(text)
 
-planets = ['Mars', 'Venus', 'Sun', 'Mercury', 'Earth', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto']
-dt_now = datetime.now()
+def not_solar(bot, update):
+    text = 'Это не планета Солнечной системы, введите /planet'
+    print(text)
+    update.message.reply_text(text)
+
 def talk_to_me(bot, update):
-    user_text = update.message.planets.split()
-    if user_text in planets:
-        user_planet = ephem.user_text(dt_now)
-        item = ephem.constellation(user_planet)
-        print(item)
-    update.message.reply_text(user_text)
-          
+    text = 'Введите название планеты на английском: '
+    print(text)
+    update.message.reply_text(text)
+
+def planet_user(bot, update):
+    planets = ['Mars', 'Venus', 'Sun', 'Mercury', 'Earth', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto']
+    dt_now = datetime.now()
+    planet_name = str(update.message.text.lower().capitalize())
+    if planet_name in planets:
+        planet = getattr(ephem, planet_name) (dt_now)
+        #planet.compute()
+        planet_user = ephem.constellation(planet)
+        print(planet_user)
+        update.message.reply_text(planet_user)
+    else:
+        print(not_solar)
 
 if __name__ == "__main__":
     main()
